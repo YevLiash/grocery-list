@@ -1,0 +1,145 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+body {
+  background-image: linear-gradient(100deg, #575656, #062e3f);
+  font-family: "Montserrat", sans-serif;
+  color: #dddada;
+  height: 100vh;
+}
+
+.form-wrapper {
+  margin: 0 auto;
+  padding: 30px 50px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.form {
+  text-align: center;
+  width: 100%;
+}
+.alert {
+  min-height: 35px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  opacity: 0;
+  transition: all 0.4s ease;
+  visibility: hidden;
+}
+.alert-successful {
+  background-color: rgba(158, 228, 165, 0.381);
+  color: rgb(59, 197, 73);
+}
+.alert-dangerous {
+  background-color: rgba(243, 40, 40, 0.159);
+  color: rgb(243, 40, 40);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.form-input-wrapper {
+  display: flex;
+  width: 100%;
+}
+.form-input-wrapper input {
+  flex: 1;
+  border: none;
+  box-shadow: none;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  padding: 3px 15px;
+  background-color: rgba(24, 26, 26, 0.6);
+  color: rgb(247, 226, 223);
+}
+
+.submit-btn {
+  font-size: 14px;
+  color: rgb(247, 226, 223);
+  background-color: rgb(239, 97, 50);
+  padding: 5px 10px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  min-width: 100px;
+}
+.grocery-container {
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+.visible {
+  visibility: visible;
+  opacity: 1 !important;
+}
+
+
+.grocery-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
+
+}
+.grocery-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(24, 26, 26, 0.6);
+  padding: 5px 15px;
+  border-radius: 20px;
+  opacity: 0;
+}
+.grocery-title {
+}
+.grocery-button-container {
+  display: flex;
+}
+
+.done{
+  text-decoration: line-through;
+}
+.grocery-button-container button {
+  background-color: rgba(166, 166, 166, 0.2);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.grocery-button-container button img {
+  width: 15px;
+  height: 15px;
+}
+
+.clear-btn {
+  display: block;
+  margin: 0 auto;
+  color: rgb(235, 56, 56);
+  border: none;
+}
