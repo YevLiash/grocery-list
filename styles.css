@@ -93,13 +93,11 @@ body {
   opacity: 1 !important;
 }
 
-
 .grocery-list {
   display: flex;
   flex-direction: column;
   gap: 8px;
   margin-bottom: 15px;
-
 }
 .grocery-item {
   width: 100%;
@@ -117,7 +115,7 @@ body {
   display: flex;
 }
 
-.done{
+.done {
   text-decoration: line-through;
 }
 .grocery-button-container button {
@@ -133,10 +131,9 @@ body {
   transition: transform 0.2s ease;
 }
 
-.grocery-button-container button:hover{
+.grocery-button-container button:hover {
   transform: scale(1.1);
 }
-
 
 .grocery-button-container button img {
   width: 15px;
